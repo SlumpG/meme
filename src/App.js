@@ -16,7 +16,7 @@ function App() {
     dispatch(getPosts())
   },[currentId,dispatch])
   return (
-    <Container maxidth="lg">
+    <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">
           Memories
@@ -31,6 +31,7 @@ function App() {
       <Grow in>
         <Container>
           <Grid
+            className={classes.mainContainer}
             container
             justifyContent="space-between"
             alignItems="stretch"
